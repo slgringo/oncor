@@ -1,19 +1,22 @@
-package com.vaadin.example;
+package com.vaadin.example.ui;
 
 import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.HasSize;
 import com.vaadin.flow.component.Tag;
 import com.vaadin.flow.server.StreamResource;
 
+/**
+ * Компонент для отобрадения pdf
+ */
 @Tag("object")
-public class EmbeddedPdfDocument extends Component implements HasSize {
+class EmbeddedPdfDocument extends Component implements HasSize {
 
-    public EmbeddedPdfDocument(StreamResource resource) {
+    EmbeddedPdfDocument(StreamResource resource) {
         this();
         getElement().setAttribute("data", resource);
     }
 
-    protected EmbeddedPdfDocument() {
+    private EmbeddedPdfDocument() {
         getElement().setAttribute("type", "application/pdf");
         setSizeFull();
     }

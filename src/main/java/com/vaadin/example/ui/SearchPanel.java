@@ -1,31 +1,37 @@
-package com.vaadin.example;
+package com.vaadin.example.ui;
 
+import com.vaadin.example.search.FileUtils;
+import com.vaadin.example.search.MdProcessor;
+import com.vaadin.example.search.Searcher;
+import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.html.Input;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
-import com.vaadin.flow.component.button.Button;
-import com.vaadin.flow.router.Route;
 import com.vaadin.flow.server.StreamResource;
 import com.vaadin.flow.server.StreamResourceWriter;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
-import java.net.URISyntaxException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
-@Route("")
-public class MainView extends VerticalLayout {
-    private Searcher searcher = new Searcher();
-    List<Button> resultLLabels = new ArrayList<>();
-    VerticalLayout textLayout = new VerticalLayout();
-    VerticalLayout viewer = new VerticalLayout();
-    HorizontalLayout buttonLayout = new HorizontalLayout();
+/**
+ * Панель с инструментами поиска и вывода результатов
+ */
+public class SearchPanel extends VerticalLayout {
+    private static final Logger LOG = LoggerFactory.getLogger(SearchPanel.class);
 
-    public MainView() {
+    private Searcher searcher = new Searcher();
+    private List<Button> resultLLabels = new ArrayList<>();
+    private VerticalLayout textLayout = new VerticalLayout();
+    private VerticalLayout viewer = new VerticalLayout();
+    private HorizontalLayout resultLayout = new HorizontalLayout();
+
+    public SearchPanel() {
+        setSizeFull();
+        HorizontalLayout buttonLayout = new HorizontalLayout();
         add(buttonLayout);
         Input filterString = new Input();
         Button button = new Button("Search",
@@ -34,28 +40,37 @@ public class MainView extends VerticalLayout {
         buttonLayout.setWidth("80%");
         filterString.setWidth("90%");
         buttonLayout.add(button);
-        add(textLayout);
-        add(viewer);
-        viewer.setHeight("70%");
+        add(resultLayout);
+        resultLayout.add(textLayout);
+        resultLayout.addAndExpand(viewer);
+        resultLayout.setSizeFull();
         setHeight("100%");
     }
 
+    /**
+     * Запустить поиск по документам
+     * @param searchText текст для поиска
+     */
     private void search(String searchText) {
         viewer.removeAll();
         resultLLabels.forEach(l -> textLayout.remove(l));
         resultLLabels.clear();
         List<String> results = searcher.getMatchesFilenames(searchText);
         results.forEach(r -> {
-            String fileData = getFileData(r);
-            String title = getTiltle(fileData);
+            String fileData = FileUtils.getFileData(r);
+            String title = MdProcessor.getTiltle(fileData);
             Button button = new Button(title);
-            String resourceFilename = getResourceFilename(fileData);
+            String resourceFilename = MdProcessor.getResourceFilename(fileData);
             button.addClickListener(event -> showDocument(resourceFilename));
             resultLLabels.add(button);
             textLayout.add(button);
         });
     }
 
+    /**
+     * Показать документ
+     * @param filename имя файла
+     */
     private void showDocument(String filename) {
         viewer.removeAll();
         byte[] data;
@@ -63,6 +78,7 @@ public class MainView extends VerticalLayout {
             data = new byte[inputStream.available()];
             inputStream.read(data);
         } catch (IOException e) {
+            LOG.error("Failed to open document {}", filename);
             data = null;
         }
         final byte [] data2 = data;
@@ -72,30 +88,4 @@ public class MainView extends VerticalLayout {
         });
         viewer.add(new EmbeddedPdfDocument(streamResource));
     }
-
-    private String getTiltle(String fileData) {
-        int index = fileData.indexOf("title: ");
-        if (index > 0)
-            return fileData.substring(index + 7).trim().split("\r")[0];
-        else
-            return "";
-    }
-
-        private String getResourceFilename(String fileData) {
-        String[] parts = fileData.split("resources:\r\n.*?-");
-        if (parts.length > 1) {
-            return parts[1].trim().split("\r")[0];
-        }
-        return "";
-    }
-
-    private String getFileData(String filename) {
-        try {
-            File file = new File(getClass().getResource("/" + filename).toURI().getPath());
-            return new String(Files.readAllBytes(Paths.get(file.getCanonicalPath())));
-        } catch (URISyntaxException | IOException e) {
-            return "";
-        }
-    }
 }
-
