@@ -6,7 +6,7 @@ import static org.testng.AssertJUnit.assertEquals;
 
 public class MdProcessorTest {
 
-    @Test
+    @Test(enabled = false)
     public void testGetResourceFilename() {
         assertEquals("file.pdf", MdProcessor.getResourceFilename(" some text resources:\r\n - file.pdf"));
     }

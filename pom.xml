@@ -16,6 +16,8 @@
         <vaadin.version>14.0.4</vaadin.version>
         <node.version>v10.16.3</node.version>
 
+        <flexmark.version>0.50.42</flexmark.version>
+
     </properties>
 
     <repositories>
@@ -91,6 +93,12 @@
             <artifactId>testng</artifactId>
             <version>6.14.3</version>
             <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.vladsch.flexmark</groupId>
+            <artifactId>flexmark-all</artifactId>
+            <version>${flexmark.version}</version>
         </dependency>
     </dependencies>
 
