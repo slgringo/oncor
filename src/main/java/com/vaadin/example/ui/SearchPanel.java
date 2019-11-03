@@ -4,16 +4,11 @@ import com.vaadin.example.search.FileUtils;
 import com.vaadin.example.search.MdProcessor;
 import com.vaadin.example.search.Searcher;
 import com.vaadin.flow.component.button.Button;
+import com.vaadin.flow.component.html.H1;
 import com.vaadin.flow.component.html.Input;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
-import com.vaadin.flow.server.StreamResource;
-import com.vaadin.flow.server.StreamResourceWriter;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
-import java.io.IOException;
-import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,29 +16,38 @@ import java.util.List;
  * Панель с инструментами поиска и вывода результатов
  */
 public class SearchPanel extends VerticalLayout {
-    private static final Logger LOG = LoggerFactory.getLogger(SearchPanel.class);
-
     private Searcher searcher = new Searcher();
-    private List<Button> resultLLabels = new ArrayList<>();
+    private List<DescriptionItem> resultItems = new ArrayList<>();
     private VerticalLayout textLayout = new VerticalLayout();
     private VerticalLayout viewer = new VerticalLayout();
     private HorizontalLayout resultLayout = new HorizontalLayout();
+    FilterCheckboxes filterCheckboxes = new FilterCheckboxes();
 
     public SearchPanel() {
         setSizeFull();
+        setAlignItems(Alignment.CENTER);
+        H1 title = new H1("Поиск документов");
+        title.setClassName("lumo-success-text-color");
+        add(title);
         HorizontalLayout buttonLayout = new HorizontalLayout();
+        buttonLayout.addClassName("searchPanel");
         add(buttonLayout);
         Input filterString = new Input();
-        Button button = new Button("Search",
+        Button button = new Button("Найти",
                 event -> search(filterString.getValue()));
+        button.addClassName("searchButton");
         buttonLayout.add(filterString);
-        buttonLayout.setWidth("80%");
+        buttonLayout.setWidth("100%");
         filterString.setWidth("90%");
+        filterString.setHeight("30px");
+        buttonLayout.setAlignItems(Alignment.CENTER);
         buttonLayout.add(button);
+        add(filterCheckboxes);
         add(resultLayout);
         resultLayout.add(textLayout);
         resultLayout.addAndExpand(viewer);
         resultLayout.setSizeFull();
+        textLayout.addClassName("resultLayout");
         setHeight("100%");
     }
 
@@ -53,39 +57,17 @@ public class SearchPanel extends VerticalLayout {
      */
     private void search(String searchText) {
         viewer.removeAll();
-        resultLLabels.forEach(l -> textLayout.remove(l));
-        resultLLabels.clear();
+        resultItems.forEach(l -> textLayout.remove(l));
+        resultItems.clear();
         List<String> results = searcher.getMatchesFilenames(searchText);
         results.forEach(r -> {
             String fileData = FileUtils.getFileData(r);
-            String title = MdProcessor.getTiltle(fileData);
-            Button button = new Button(title);
+            String category = MdProcessor.getTiltle(fileData);
             String resourceFilename = MdProcessor.getResourceFilename(fileData);
-            button.addClickListener(event -> showDocument(resourceFilename));
-            resultLLabels.add(button);
-            textLayout.add(button);
+            DescriptionItem item = new DescriptionItem(/*Categories.valueOf(category)*/null, "Заголовок", //todo resolve encoding bug
+                    "Содержание", resourceFilename, viewer);
+            resultItems.add(item);
+            textLayout.add(item);
         });
-    }
-
-    /**
-     * Показать документ
-     * @param filename имя файла
-     */
-    private void showDocument(String filename) {
-        viewer.removeAll();
-        byte[] data;
-        try (InputStream inputStream = getClass().getResourceAsStream("/" + filename)) {
-            data = new byte[inputStream.available()];
-            inputStream.read(data);
-        } catch (IOException e) {
-            LOG.error("Failed to open document {}", filename);
-            data = null;
-        }
-        final byte [] data2 = data;
-        StreamResource streamResource = new StreamResource(filename, (StreamResourceWriter) (outputStream, vaadinSession) -> {
-            if (data2 != null)
-                outputStream.write(data2);
-        });
-        viewer.add(new EmbeddedPdfDocument(streamResource));
     }
 }
