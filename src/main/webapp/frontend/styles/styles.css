@@ -10,14 +10,15 @@
 }
 
 .descriptionItem {
-    background-color: floralwhite;
+    background-color: cornflowerblue;
     margin: 1px;
     border-radius: 5px;
     padding: 0;
 }
 
 .descriptionItem:hover {
-    background-color: whitesmoke;
+    background-color: #0074D9;
+    cursor: default;
 }
 
 .resultLayout {

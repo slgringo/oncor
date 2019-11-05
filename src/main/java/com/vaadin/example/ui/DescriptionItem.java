@@ -12,6 +12,7 @@ import org.slf4j.LoggerFactory;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.List;
 
 public class DescriptionItem extends VerticalLayout {
     private static final Logger LOG = LoggerFactory.getLogger(DescriptionItem.class);
@@ -19,15 +20,18 @@ public class DescriptionItem extends VerticalLayout {
 
     private VerticalLayout viewer;
 
-    public DescriptionItem(Categories category, String title, String description, String resourceFilename, VerticalLayout viewer) {
+    public DescriptionItem(Categories category, String title, List<String> description, String resourceFilename, VerticalLayout viewer) {
         this.viewer = viewer;
-        setWidth("100%");
-        setAlignItems(Alignment.CENTER);
+        setWidth("400px");
+        setAlignItems(Alignment.AUTO);
         addClassName("descriptionItem");
         H3 titleLabel = new H3(title);
         add(titleLabel);
-        Label descriptionLabel = new Label(description);
-        add(descriptionLabel);
+        if (description != null)
+            description.forEach(d -> {
+                Label descriptionLabel = new Label(d);
+                add(descriptionLabel);
+            });
         addClickListener(event -> showDocument(resourceFilename));
     }
 

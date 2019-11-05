@@ -20,7 +20,6 @@ public class SearchPanel extends VerticalLayout {
     private List<DescriptionItem> resultItems = new ArrayList<>();
     private VerticalLayout textLayout = new VerticalLayout();
     private VerticalLayout viewer = new VerticalLayout();
-    private HorizontalLayout resultLayout = new HorizontalLayout();
     private FilterCheckboxes filterCheckboxes = new FilterCheckboxes();
 
     public SearchPanel() {
@@ -43,6 +42,7 @@ public class SearchPanel extends VerticalLayout {
         buttonLayout.setAlignItems(Alignment.CENTER);
         buttonLayout.add(button);
         add(filterCheckboxes);
+        HorizontalLayout resultLayout = new HorizontalLayout();
         add(resultLayout);
         resultLayout.add(textLayout);
         resultLayout.addAndExpand(viewer);
@@ -62,10 +62,10 @@ public class SearchPanel extends VerticalLayout {
         List<String> results = searcher.getMatchesFilenames(searchText);
         results.forEach(r -> {
             String fileData = FileUtils.getFileData("md/" + r);
-            String category = MdProcessor.getTiltle(fileData);
+            String category = MdProcessor.getCategory(fileData);
             String resourceFilename = MdProcessor.getResourceFilename(fileData);
-            DescriptionItem item = new DescriptionItem(/*Categories.valueOf(category)*/null, "Заголовок", //todo resolve encoding bug
-                    "Содержание", resourceFilename, viewer);
+            DescriptionItem item = new DescriptionItem(/*Categories.valueOf(category)*/null, MdProcessor.getTitle(fileData), //todo resolve encoding bug
+                    MdProcessor.getContent(fileData), resourceFilename, viewer);
             resultItems.add(item);
             textLayout.add(item);
         });

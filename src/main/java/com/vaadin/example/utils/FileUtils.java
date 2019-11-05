@@ -5,6 +5,7 @@ import org.slf4j.LoggerFactory;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
@@ -27,7 +28,7 @@ public class FileUtils {
     public static String getFileData(String filename) {
         try {
             File file = new File(config.get("app.root") + filename);
-            return new String(Files.readAllBytes(Paths.get(file.getCanonicalPath())));
+            return new String(Files.readAllBytes(Paths.get(file.getCanonicalPath())), StandardCharsets.UTF_8);
         } catch (IOException e) {
             LOG.error("Failed to open document {}", filename);
             return "";
