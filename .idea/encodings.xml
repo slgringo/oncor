@@ -2,7 +2,7 @@
 <project version="4">
   <component name="Encoding" addBOMForNewFiles="with NO BOM">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/c50.00.md" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/ploskokletochnyi_rak_vlagalischa.md" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/md/c50.00.md" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/md/ploskokletochnyi_rak_vlagalischa.md" charset="UTF-8" />
   </component>
 </project>

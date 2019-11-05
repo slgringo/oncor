@@ -1,10 +1,8 @@
 package com.vaadin.example.search;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import com.vaadin.example.utils.Config;
 
 import java.io.File;
-import java.net.URISyntaxException;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
@@ -15,7 +13,7 @@ import java.util.stream.Collectors;
  * Класс для поиска вхождений текста в файлах
  */
 public class Searcher {
-    private static final Logger LOG = LoggerFactory.getLogger(Searcher.class);
+    private static final Config config = Config.getInstance();
     private static final Pattern PATTERN =  Pattern.compile(".*\\.md");
 
     /**
@@ -33,13 +31,7 @@ public class Searcher {
      */
     private List<File> getFileListForSearch() {
         File folder;
-        try {
-            folder = new File(getClass().getResource("/").toURI().getPath());
-        } catch (URISyntaxException e) {
-            LOG.error(e.getMessage());
-            return Collections.emptyList();
-        }
-
+        folder = new File(config.get("app.root") + "md");
         File [] files = folder.listFiles();
         if (files != null) {
             return Arrays.stream(files).filter(f -> !f.isDirectory() && PATTERN.matcher(f.getName())

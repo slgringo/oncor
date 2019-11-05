@@ -1,6 +1,7 @@
 package com.vaadin.example.ui;
 
 import com.vaadin.example.search.Categories;
+import com.vaadin.example.utils.Config;
 import com.vaadin.flow.component.html.H3;
 import com.vaadin.flow.component.html.Label;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
@@ -9,13 +10,14 @@ import com.vaadin.flow.server.StreamResourceWriter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.InputStream;
 
 public class DescriptionItem extends VerticalLayout {
     private static final Logger LOG = LoggerFactory.getLogger(DescriptionItem.class);
+    private static final Config config = Config.getInstance();
 
-    VerticalLayout viewer;
+    private VerticalLayout viewer;
 
     public DescriptionItem(Categories category, String title, String description, String resourceFilename, VerticalLayout viewer) {
         this.viewer = viewer;
@@ -36,7 +38,7 @@ public class DescriptionItem extends VerticalLayout {
     private void showDocument(String filename) {
         viewer.removeAll();
         byte[] data;
-        try (InputStream inputStream = getClass().getResourceAsStream("/" + filename)) {
+        try (FileInputStream inputStream = new FileInputStream(getDocDir() + filename)) {
             data = new byte[inputStream.available()];
             inputStream.read(data);
         } catch (IOException e) {
@@ -49,5 +51,9 @@ public class DescriptionItem extends VerticalLayout {
                 outputStream.write(data2);
         });
         viewer.add(new EmbeddedPdfDocument(streamResource));
+    }
+
+    private String getDocDir() {
+        return config.get("app.root") + "docs/";
     }
 }

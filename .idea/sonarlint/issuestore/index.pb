@@ -151,3 +151,11 @@ l
 <src/test/java/com/vaadin/example/search/MdProcessorTest.java,d\a\da8ca72de376d09109e7046211df463ba467f4c2
 h
 8src/main/java/com/vaadin/example/search/MdProcessor.java,4\9\4913d59d258d21b82e2efa20fdd9f3ce5a2f8802
+g
+7src/main/java/com/vaadin/example/search/Categories.java,1\f\1f46b361a83da39ea399817f73c3c9811182371e
+h
+8src/main/java/com/vaadin/example/ui/DescriptionItem.java,0\c\0cdcbc9c4e645137ac4a44ac4e7da44236db6234
+i
+9src/main/java/com/vaadin/example/ui/FilterCheckboxes.java,4\9\49d315f348e4bb718abb90008a646f92418e9578
+Z
+*src/main/webapp/frontend/styles/styles.css,8\1\81223074e506e876501835fe6143bca58f2543ab

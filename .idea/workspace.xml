@@ -7,13 +7,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="109b4e34-8641-4c00-a638-13135145b7a5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vaadin/example/search/Categories.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vaadin/example/ui/DescriptionItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vaadin/example/ui/FilterCheckboxes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/frontend/styles/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vaadin/example/utils/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/oncor.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vaadin/example/app/MainView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vaadin/example/app/MainView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vaadin/example/search/FileUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vaadin/example/utils/FileUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vaadin/example/search/MdProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vaadin/example/search/MdProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vaadin/example/search/Searcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vaadin/example/search/Searcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vaadin/example/ui/DescriptionItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vaadin/example/ui/DescriptionItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/vaadin/example/ui/SearchPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vaadin/example/ui/SearchPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/c50.00.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/md/c50.00.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/first.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/md/first.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ploskokletochnyi_rak_vlagalischa.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/md/ploskokletochnyi_rak_vlagalischa.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/second.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/md/second.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/test.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/docs/test.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/third.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/md/third.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,71 +33,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/vaadin/example/search/Categories.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-              <folding>
-                <element signature="e#216#217#0" expanded="true" />
-                <element signature="e#249#250#0" expanded="true" />
-                <element signature="e#286#287#0" expanded="true" />
-                <element signature="e#313#314#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/vaadin/example/ui/SearchPanel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="45" lean-forward="true" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/vaadin/example/ui/DescriptionItem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="38" lean-forward="true" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+            <state relative-caret-position="163">
+              <caret line="15" column="53" lean-forward="true" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/vaadin/example/ui/FilterCheckboxes.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="31" lean-forward="true" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/vaadin/example/app/MainView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/frontend/styles/styles.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -127,16 +79,19 @@
         <option value="$PROJECT_DIR$/src/main/java/com/vaadin/example/search/MdProcessorTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/first.md" />
-        <option value="$PROJECT_DIR$/src/main/java/com/vaadin/example/search/Searcher.java" />
         <option value="$PROJECT_DIR$/src/main/resources/c50.00.md" />
         <option value="$PROJECT_DIR$/src/test/java/com/vaadin/example/search/MdProcessorTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/vaadin/example/search/MdProcessor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/vaadin/example/search/Categories.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/vaadin/example/ui/FilterCheckboxes.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/vaadin/example/app/MainView.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/vaadin/example/ui/DescriptionItem.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/frontend/styles/styles.css" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vaadin/example/utils/Config.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/oncor.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/vaadin/example/ui/SearchPanel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vaadin/example/utils/FileUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vaadin/example/search/Searcher.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vaadin/example/search/MdProcessor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vaadin/example/ui/DescriptionItem.java" />
       </list>
     </option>
   </component>
@@ -187,6 +142,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -253,7 +209,23 @@
               <item name="oncor" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="oncor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="oncor" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="oncor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="oncor" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="oncor" type="b2602c69:ProjectViewProjectNode" />
@@ -287,14 +259,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572803849638" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572948042559" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -309,6 +280,10 @@
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.vaadin.example.search" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Projects\tests\oncor\src\main\webapp\docs" />
+      <recent name="C:\Projects\tests\oncor\src\main\webapp\md" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.vaadin.example.search" />
@@ -337,7 +312,7 @@
       <module name="oncor" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.vaadin.example.search.*" />
+          <option name="PATTERN" value="com.vaadin.example.utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -353,7 +328,6 @@
     </configuration>
     <configuration name="Tomcat 8.5.35" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.35" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="OPEN_IN_BROWSER" value="false" />
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/oncor/" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="oncor:war">
@@ -402,6 +376,11 @@
           <option name="VM_PARAMETERS" value="" />
           <option name="PROGRAM_PARAMETERS" value="" />
         </SHUTDOWN>
+        <EnvironmentVariables>
+          <option name="NAME" value="ONCOR_CONFIG_PATH" />
+          <option name="VALUE" value="../webapps/oncor/" />
+          <option name="IS_PREDEFINED" value="false" />
+        </EnvironmentVariables>
       </ConfigurationWrapper>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -417,6 +396,16 @@
           <option name="VM_PARAMETERS" value="" />
           <option name="PROGRAM_PARAMETERS" value="" />
         </SHUTDOWN>
+        <EnvironmentVariables>
+          <option name="NAME" value="ONCOR_CONFIG_PATH" />
+          <option name="VALUE" value="../webapps/oncor/" />
+          <option name="IS_PREDEFINED" value="false" />
+        </EnvironmentVariables>
+        <EnvironmentVariables>
+          <option name="NAME" value="" />
+          <option name="VALUE" value="" />
+          <option name="IS_PREDEFINED" value="false" />
+        </EnvironmentVariables>
       </ConfigurationWrapper>
       <method v="2">
         <option name="Make" enabled="true" />
@@ -425,6 +414,10 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="TestNG.MdProcessorTest.testGetResourceFilename" />
+      <item itemvalue="Tomcat Server.Tomcat 8.5.35" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.MdProcessorTest.testGetResourceFilename" />
@@ -448,7 +441,8 @@
       <workItem from="1572583948276" duration="580000" />
       <workItem from="1572594703240" duration="6746000" />
       <workItem from="1572625721455" duration="2008000" />
-      <workItem from="1572778494247" duration="9375000" />
+      <workItem from="1572778494247" duration="10154000" />
+      <workItem from="1572942348759" duration="5293000" />
     </task>
     <task id="LOCAL-00001" summary="Base project">
       <created>1572375670775</created>
@@ -464,7 +458,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572459942065</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Updated UI">
+      <created>1572804148665</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1572804148665</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -482,13 +483,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49748000" />
+    <option name="totallyTimeSpent" value="55820000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18443497" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18443497" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -499,7 +500,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -530,10 +531,47 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Base project" />
     <MESSAGE value="Refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactoring" />
+    <MESSAGE value="Updated UI" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated UI" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>file.getName()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>FileUtils.getFileData(file.getName())</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>FileUtils.getFileData(file.getName()))</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>System.getenv(&quot;TELEMED_CONFIG_PATH&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>new File(&quot;..&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>new File(&quot;.&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>FileUtils.cu</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>org.apache.commons.io.FileUtils</custom-info>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>new String(data.get(&quot;title&quot;).get(0), &quot;UTF&quot;)</expression-string>
         <language-id>JAVA</language-id>
@@ -541,51 +579,6 @@
       </expression>
       <expression>
         <expression-string>data.get(&quot;title&quot;).get(0)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>data.get(&quot;title&quot;)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>document.getSegments()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>((Document) document).getAll()</expression-string>
-        <language-id>JAVA</language-id>
-        <custom-info>com.vladsch.flexmark.util.ast.Document</custom-info>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>((Document) document).get(&quot;mkb&quot;)</expression-string>
-        <language-id>JAVA</language-id>
-        <custom-info>com.vladsch.flexmark.util.ast.Document</custom-info>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>new StreamResource(&quot;/&quot; + filename, (StreamResourceWriter) (outputStream, vaadinSession) -&gt; {
-            if (data2 != null)
-                outputStream.write(data2);
-        })</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>parts[1].trim().split(&quot;\r&quot;)[0]</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>fileData.split(&quot;resources:\r\n.*?-&quot;)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>fileData.split(&quot;resources.*?-&quot;)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
@@ -644,16 +637,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/vaadin/example/search/TextUtils.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vaadin/example/ui/EmbeddedPdfDocument.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/vladsch/flexmark/flexmark/0.50.42/flexmark-0.50.42.jar!/com/vladsch/flexmark/parser/Parser.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -689,7 +672,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/second.md">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/md/second.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="85">
@@ -699,7 +682,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/third.md">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/md/third.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="85">
@@ -709,33 +692,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/first.md">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/md/first.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="153">
             <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vaadin/example/search/FileUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vaadin/example/search/Searcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="696">
-          <caret line="63" column="9" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -746,23 +709,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vaadin/example/search/MdProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-69">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/ploskokletochnyi_rak_vlagalischa.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="136">
-            <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -787,50 +733,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/c50.00.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="17">
-            <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vaadin/example/ui/SearchPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="45" lean-forward="true" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/vaadin/example/search/Categories.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
+        <state relative-caret-position="170">
           <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-          <folding>
-            <element signature="e#216#217#0" expanded="true" />
-            <element signature="e#249#250#0" expanded="true" />
-            <element signature="e#286#287#0" expanded="true" />
-            <element signature="e#313#314#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vaadin/example/ui/DescriptionItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="38" lean-forward="true" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/vaadin/example/ui/FilterCheckboxes.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" column="31" lean-forward="true" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -840,17 +753,118 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/vaadin/example/app/MainView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/md/ploskokletochnyi_rak_vlagalischa.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="136">
+            <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/md/c50.00.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="17">
+            <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vaadin/example/utils/Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="19" column="22" lean-forward="true" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1065#1066#0" expanded="true" />
+            <element signature="e#1097#1098#0" expanded="true" />
+            <element signature="e#1166#1167#0" expanded="true" />
+            <element signature="e#1216#1217#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/frontend/styles/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+        <state relative-caret-position="255">
+          <caret line="15" column="15" lean-forward="true" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/oncor.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vaadin/example/utils/FileUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vaadin/example/ui/SearchPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="62" selection-start-line="62" selection-end-line="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vaadin/example/ui/EmbeddedPdfDocument.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vaadin/example/search/MdProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="47" column="57" selection-start-line="47" selection-start-column="57" selection-end-line="47" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vaadin/example/search/Searcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="15" column="62" lean-forward="true" selection-start-line="15" selection-start-column="62" selection-end-line="15" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vaadin/example/ui/DescriptionItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="15" column="53" lean-forward="true" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

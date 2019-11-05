@@ -1,6 +1,6 @@
 package com.vaadin.example.ui;
 
-import com.vaadin.example.search.FileUtils;
+import com.vaadin.example.utils.FileUtils;
 import com.vaadin.example.search.MdProcessor;
 import com.vaadin.example.search.Searcher;
 import com.vaadin.flow.component.button.Button;
@@ -21,7 +21,7 @@ public class SearchPanel extends VerticalLayout {
     private VerticalLayout textLayout = new VerticalLayout();
     private VerticalLayout viewer = new VerticalLayout();
     private HorizontalLayout resultLayout = new HorizontalLayout();
-    FilterCheckboxes filterCheckboxes = new FilterCheckboxes();
+    private FilterCheckboxes filterCheckboxes = new FilterCheckboxes();
 
     public SearchPanel() {
         setSizeFull();
@@ -61,7 +61,7 @@ public class SearchPanel extends VerticalLayout {
         resultItems.clear();
         List<String> results = searcher.getMatchesFilenames(searchText);
         results.forEach(r -> {
-            String fileData = FileUtils.getFileData(r);
+            String fileData = FileUtils.getFileData("md/" + r);
             String category = MdProcessor.getTiltle(fileData);
             String resourceFilename = MdProcessor.getResourceFilename(fileData);
             DescriptionItem item = new DescriptionItem(/*Categories.valueOf(category)*/null, "Заголовок", //todo resolve encoding bug

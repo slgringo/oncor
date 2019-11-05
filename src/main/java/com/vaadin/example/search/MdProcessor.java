@@ -1,5 +1,6 @@
 package com.vaadin.example.search;
 
+import com.vaadin.example.utils.FileUtils;
 import com.vladsch.flexmark.ext.yaml.front.matter.AbstractYamlFrontMatterVisitor;
 import com.vladsch.flexmark.ext.yaml.front.matter.YamlFrontMatterExtension;
 import com.vladsch.flexmark.parser.Parser;
@@ -44,7 +45,7 @@ public class MdProcessor {
      * @return регулярное выражение
      */
     static String getResourcePattern(File file) {
-        return getYamlData(FileUtils.getFileData(file.getName())).getOrDefault("mkb", Collections.singletonList("")).get(0);
+        return getYamlData(FileUtils.getFileData("md/" + file.getName())).getOrDefault("mkb", Collections.singletonList("")).get(0);
     }
 
     private static Map<String, List<String>> getYamlData(String input) {

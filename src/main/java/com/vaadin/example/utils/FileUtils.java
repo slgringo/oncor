@@ -1,11 +1,10 @@
-package com.vaadin.example.search;
+package com.vaadin.example.utils;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.File;
 import java.io.IOException;
-import java.net.URISyntaxException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
@@ -14,6 +13,7 @@ import java.nio.file.Paths;
  */
 public class FileUtils {
     private static final Logger LOG = LoggerFactory.getLogger(FileUtils.class);
+    private static final Config config = Config.getInstance();
 
     private FileUtils() {
 
@@ -26,9 +26,9 @@ public class FileUtils {
      */
     public static String getFileData(String filename) {
         try {
-            File file = new File(FileUtils.class.getResource("/" + filename).toURI().getPath());
+            File file = new File(config.get("app.root") + filename);
             return new String(Files.readAllBytes(Paths.get(file.getCanonicalPath())));
-        } catch (URISyntaxException | IOException e) {
+        } catch (IOException e) {
             LOG.error("Failed to open document {}", filename);
             return "";
         }
