@@ -61,11 +61,11 @@ public class SearchPanel extends VerticalLayout {
         resultItems.clear();
         List<String> results = searcher.getMatchesFilenames(searchText);
         results.forEach(r -> {
-            String fileData = FileUtils.getFileData("md/" + r);
-            String category = MdProcessor.getCategory(fileData);
-            String resourceFilename = MdProcessor.getResourceFilename(fileData);
-            DescriptionItem item = new DescriptionItem(/*Categories.valueOf(category)*/null, MdProcessor.getTitle(fileData), //todo resolve encoding bug
-                    MdProcessor.getContent(fileData), resourceFilename, viewer);
+            String fileData = FileUtils.INSTANCE.getFileData("md/" + r);
+            String category = MdProcessor.INSTANCE.getCategory(fileData);
+            String resourceFilename = MdProcessor.INSTANCE.getResourceFilename(fileData);
+            DescriptionItem item = new DescriptionItem(/*Categories.valueOf(category)*/null, MdProcessor.INSTANCE.getTitle(fileData), //todo resolve encoding bug
+                    MdProcessor.INSTANCE.getContent(fileData), resourceFilename, viewer);
             resultItems.add(item);
             textLayout.add(item);
         });

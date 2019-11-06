@@ -13,7 +13,7 @@ import java.util.stream.Collectors;
  * Класс для поиска вхождений текста в файлах
  */
 public class Searcher {
-    private static final Config config = Config.getInstance();
+    private static final Config config = Config.Companion.getInstance();
     private static final Pattern PATTERN =  Pattern.compile(".*\\.md");
 
     /**
@@ -47,7 +47,7 @@ public class Searcher {
      * @return true если файл удовлетворяет условию поиска
      */
     private boolean fileMathches(File file, String searchText) {
-        String patternString = MdProcessor.getResourcePattern(file);
+        String patternString = MdProcessor.INSTANCE.getResourcePattern(file);
         if (patternString != null) {
             Pattern pattern = Pattern.compile(patternString, Pattern.CASE_INSENSITIVE);
             return pattern.matcher(searchText).matches();

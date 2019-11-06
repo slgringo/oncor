@@ -16,7 +16,7 @@ import java.util.List;
 
 public class DescriptionItem extends VerticalLayout {
     private static final Logger LOG = LoggerFactory.getLogger(DescriptionItem.class);
-    private static final Config config = Config.getInstance();
+    private static final Config config = Config.Companion.getInstance();
 
     private VerticalLayout viewer;
 

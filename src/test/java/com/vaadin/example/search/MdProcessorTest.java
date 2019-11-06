@@ -8,6 +8,6 @@ public class MdProcessorTest {
 
     @Test(enabled = false)
     public void testGetResourceFilename() {
-        assertEquals("file.pdf", MdProcessor.getResourceFilename(" some text resources:\r\n - file.pdf"));
+        assertEquals("file.pdf", MdProcessor.INSTANCE.getResourceFilename(" some text resources:\r\n - file.pdf"));
     }
 }
