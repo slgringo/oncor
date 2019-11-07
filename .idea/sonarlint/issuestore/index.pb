@@ -113,12 +113,6 @@ U
 %.mvn/wrapper/maven-wrapper.properties,3\2\32e074f71d16c1e88ac02aa83592ca6ad1fd98a8
 X
 (.mvn/wrapper/MavenWrapperDownloader.java,6\1\61ba2d75f3f04e099148e7a84c6a909f2000ff04
-K
-src/main/resources/first.md,1\5\1572ee77af363258b0d9a48363f15ecbad776d37
-L
-src/main/resources/second.md,5\8\58590bad53a93f1a3984eed6f42ac2557b9fccfa
-K
-src/main/resources/third.md,6\a\6ae4204c4426b4c3e7074410d463011dabc696a0
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
@@ -139,10 +133,6 @@ A
 webpack.config.js,d\5\d5595158cc48f9bf3e51b06f6e6805a8fd2d6262
 b
 2src/main/java/com/vaadin/example/app/MainView.java,5\e\5e5682b3645f20e26e64fbe957f69240c1d4026d
-f
-6src/main/java/com/vaadin/example/search/FileUtils.java,b\f\bfddf440b690b39ed18f48b82d373d210c13d70f
-e
-5src/main/java/com/vaadin/example/search/Searcher.java,1\c\1c4bc83538857b7146ef0cc9b36c2ba9a20c2b37
 l
 <src/main/java/com/vaadin/example/ui/EmbeddedPdfDocument.java,6\1\613885d201a223d1037862a0f7a54456479efa64
 d
@@ -150,12 +140,10 @@ d
 l
 <src/test/java/com/vaadin/example/search/MdProcessorTest.java,d\a\da8ca72de376d09109e7046211df463ba467f4c2
 h
-8src/main/java/com/vaadin/example/search/MdProcessor.java,4\9\4913d59d258d21b82e2efa20fdd9f3ce5a2f8802
-g
-7src/main/java/com/vaadin/example/search/Categories.java,1\f\1f46b361a83da39ea399817f73c3c9811182371e
-h
 8src/main/java/com/vaadin/example/ui/DescriptionItem.java,0\c\0cdcbc9c4e645137ac4a44ac4e7da44236db6234
 i
 9src/main/java/com/vaadin/example/ui/FilterCheckboxes.java,4\9\49d315f348e4bb718abb90008a646f92418e9578
 Z
 *src/main/webapp/frontend/styles/styles.css,8\1\81223074e506e876501835fe6143bca58f2543ab
+c
+3src/main/java/com/vaadin/example/search/Searcher.kt,3\a\3a26c579da12b888baae83abdb4a61433da8ee34
