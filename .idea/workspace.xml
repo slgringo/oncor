@@ -7,10 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="109b4e34-8641-4c00-a638-13135145b7a5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/vaadin/example/ui/FilterCheckboxes.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/md/first.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/md/с45.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/md/second.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/md/с46.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/md/third.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/md/с47.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vaadin/example/search/Searcher.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/vaadin/example/search/Searcher.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vaadin/example/ui/FilterCheckboxes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/vaadin/example/search/Categories.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/vaadin/example/search/Categories.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/vaadin/example/ui/DescriptionItem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/vaadin/example/ui/DescriptionItem.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/vaadin/example/ui/SearchPanel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/vaadin/example/ui/SearchPanel.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,73 +25,56 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/vaadin/example/ui/DescriptionItem.kt">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/vaadin/example/ui/FilterCheckboxes.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="591">
-              <caret line="44" column="37" selection-start-line="44" selection-start-column="37" selection-end-line="44" selection-end-column="37" />
+            <state relative-caret-position="255">
+              <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
               <folding>
-                <element signature="e#31#394#0" expanded="true" />
+                <element signature="e#31#189#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/vaadin/example/ui/SearchPanel.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="61">
+              <caret line="30" column="42" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/vaadin/flow-server/2.0.11/flow-server-2.0.11-sources.jar!/com/vaadin/flow/component/internal/KeyboardEvent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="139" column="12" lean-forward="true" selection-start-line="139" selection-start-column="12" selection-end-line="139" selection-end-column="12" />
+              <folding>
+                <element signature="e#4857#4858#0" expanded="true" />
+                <element signature="e#4883#4884#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/md/с45.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="374">
-                <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-              </first_editor>
-              <second_editor />
+        <entry file="jar://$MAVEN_REPOSITORY$/com/vaadin/flow-server/2.0.11/flow-server-2.0.11-sources.jar!/com/vaadin/flow/component/Key.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="163">
+              <caret line="196" column="8" selection-start-line="196" selection-start-column="8" selection-end-line="196" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/md/с46.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor>
-                <caret selection-end-line="19" selection-end-column="16" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/md/с47.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="374">
-                <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/md/ploskokletochnyi_rak_vlagalischa.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="289">
-                <caret line="17" selection-start-line="17" selection-end-line="19" selection-end-column="21" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/md/c50.00.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="272">
-                <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-              </first_editor>
-              <second_editor />
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/vaadin/example/ui/DescriptionItem.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="478">
+              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+              <folding>
+                <element signature="e#31#394#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -132,7 +118,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/c50.00.md" />
         <option value="$PROJECT_DIR$/src/test/java/com/vaadin/example/search/MdProcessorTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/vaadin/example/search/Categories.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/vaadin/example/ui/FilterCheckboxes.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/vaadin/example/app/MainView.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/vaadin/example/utils/Config.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/oncor.properties" />
@@ -151,11 +136,14 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/vaadin/example/search/Searcher.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/vaadin/example/ui/SearchPanel.java" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/com/vaadin/example/ui/SearchPanel.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/com/vaadin/example/ui/DescriptionItem.kt" />
         <option value="$PROJECT_DIR$/src/main/webapp/md/с46.md" />
         <option value="$PROJECT_DIR$/src/main/webapp/md/с47.md" />
         <option value="$PROJECT_DIR$/src/main/webapp/md/с45.md" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/vaadin/example/search/Categories.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/vaadin/example/ui/DescriptionItem.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vaadin/example/ui/FilterCheckboxes.java" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/vaadin/example/ui/FilterCheckboxes.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/vaadin/example/ui/SearchPanel.kt" />
       </list>
     </option>
   </component>
@@ -248,15 +236,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="example" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oncor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oncor" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="search" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="oncor" type="b2602c69:ProjectViewProjectNode" />
@@ -362,7 +341,7 @@
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1573213529384" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1573227302073" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -376,8 +355,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
-      <recent name="com.vaadin.example.utils" />
       <recent name="com.vaadin.example.search" />
+      <recent name="com.vaadin.example.utils" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.vaadin.example.search" />
@@ -385,16 +364,16 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Projects\tests\oncor\src\main\kotlin\com\vaadin\example\ui" />
-      <recent name="C:\Projects\tests\oncor\src\main\webapp\docs" />
-      <recent name="C:\Projects\tests\oncor\src\main\webapp\md" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.vaadin.example.search" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Projects\tests\oncor\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Projects\tests\oncor\src\main\kotlin\com\vaadin\example\ui" />
+      <recent name="C:\Projects\tests\oncor\src\main\webapp\docs" />
+      <recent name="C:\Projects\tests\oncor\src\main\webapp\md" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -623,7 +602,7 @@
       <workItem from="1573048764219" duration="3290000" />
       <workItem from="1573136179841" duration="278000" />
       <workItem from="1573136610572" duration="4187000" />
-      <workItem from="1573205813077" duration="5997000" />
+      <workItem from="1573205813077" duration="13136000" />
     </task>
     <task id="LOCAL-00001" summary="Base project">
       <created>1572375670775</created>
@@ -667,7 +646,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573211737472</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Test data updated">
+      <created>1573213583966</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1573213583966</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -685,7 +671,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77869000" />
+    <option name="totallyTimeSpent" value="85008000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -773,10 +759,54 @@
     <MESSAGE value="Implemented application properties and data directories" />
     <MESSAGE value="SearchPanel translated to Kotlin" />
     <MESSAGE value="DescriptionItem converted to Kotlin" />
-    <option name="LAST_COMMIT_MESSAGE" value="DescriptionItem converted to Kotlin" />
+    <MESSAGE value="Test data updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test data updated" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>event.key.matches(&quot;Enter&quot;)</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>event.key.keys.contains(&quot;Enter&quot;)</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>event.key.keys</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>event.key.matches(Key.ENTER)</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>event.key</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Categories.</expression-string>
+        <language-id>kotlin</language-id>
+        <custom-info>import com.vaadin.example.search.Categories</custom-info>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Categories.valueOf(category)</expression-string>
+        <language-id>kotlin</language-id>
+        <custom-info>import com.vaadin.example.search.Categories</custom-info>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Categories(category)</expression-string>
+        <language-id>kotlin</language-id>
+        <custom-info>import com.vaadin.example.search.Categories</custom-info>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>document.getFirstChildAny(Paragraph.class)</expression-string>
         <language-id>JAVA</language-id>
@@ -787,47 +817,9 @@
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>document</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>document.getFirstChildAny(Heading.class).getChars().toString()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>document.getFirstChildAny(Heading.class)</expression-string>
-        <language-id>JAVA</language-id>
-        <custom-info>com.vladsch.flexmark.ast.Heading</custom-info>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>document.getNextAny(Heading.class)</expression-string>
-        <language-id>JAVA</language-id>
-        <custom-info>com.vladsch.flexmark.ast.Heading</custom-info>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>document.getSegments()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>file.getName()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>FileUtils.getFileData(file.getName())</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp" />
     <entry file="file://$PROJECT_DIR$/src/main/resource.properties" />
     <entry file="jar://$MAVEN_REPOSITORY$/com/vaadin/flow-server/2.0.11/flow-server-2.0.11.jar!/com/vaadin/flow/server/StreamResource.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -935,16 +927,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vaadin/example/ui/FilterCheckboxes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/vaadin/example/app/MainView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -1009,13 +991,6 @@
         <state relative-caret-position="-2273" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/vaadin/example/search/Categories.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/vaadin/example/utils/Config.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
@@ -1038,13 +1013,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/vaadin/example/ui/SearchPanel.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/vaadin/example/ui/SearchPanel.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="611">
-          <caret line="50" column="69" selection-start-line="50" selection-start-column="69" selection-end-line="50" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -1056,16 +1024,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
           <caret line="43" column="9" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vaadin/example/search/Searcher.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="39" column="98" selection-start-line="39" selection-start-column="98" selection-end-line="39" selection-end-column="98" />
-          <folding>
-            <element signature="e#35#213#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1100,21 +1058,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/vaadin/example/ui/DescriptionItem.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="591">
-          <caret line="44" column="37" selection-start-line="44" selection-start-column="37" selection-end-line="44" selection-end-column="37" />
-          <folding>
-            <element signature="e#31#394#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/md/с46.md">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/md/c50.00.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor>
-            <caret selection-end-line="19" selection-end-column="16" />
+          <first_editor relative-caret-position="272">
+            <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
           </first_editor>
           <second_editor />
         </state>
@@ -1130,16 +1078,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/md/с45.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="374">
-            <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/md/с47.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1150,13 +1088,130 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/md/c50.00.md">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/md/с46.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="272">
-            <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <first_editor relative-caret-position="51">
+            <caret line="3" column="10" lean-forward="true" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/md/с45.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="374">
+            <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/vaadin/example/search/Categories.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="59" selection-start-line="2" selection-start-column="59" selection-end-line="2" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/vaadin/example/search/Searcher.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="39" column="98" selection-start-line="39" selection-start-column="98" selection-end-line="39" selection-end-column="98" />
+          <folding>
+            <element signature="e#35#213#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vaadin/example/ui/FilterCheckboxes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/vaadin/example/ui/FilterCheckboxes.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+          <folding>
+            <element signature="e#31#189#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/vaadin/flow-server/2.0.11/flow-server-2.0.11.jar!/com/vaadin/flow/component/KeyPressEvent.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/vaadin/flow-server/2.0.11/flow-server-2.0.11.jar!/com/vaadin/flow/component/KeyNotifier.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/vaadin/example/ui/DescriptionItem.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+          <folding>
+            <element signature="e#31#394#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/vaadin/flow-server/2.0.11/flow-server-2.0.11-sources.jar!/com/vaadin/flow/component/ComponentEventListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/vaadin/flow-server/2.0.11/flow-server-2.0.11-sources.jar!/com/vaadin/flow/component/KeyPressEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="37" column="16" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/vaadin/flow-server/2.0.11/flow-server-2.0.11-sources.jar!/com/vaadin/flow/component/KeyNotifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="59" column="43" lean-forward="true" selection-start-line="59" selection-start-column="43" selection-end-line="59" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/vaadin/flow-server/2.0.11/flow-server-2.0.11-sources.jar!/com/vaadin/flow/component/internal/KeyboardEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="139" column="12" lean-forward="true" selection-start-line="139" selection-start-column="12" selection-end-line="139" selection-end-column="12" />
+          <folding>
+            <element signature="e#4857#4858#0" expanded="true" />
+            <element signature="e#4883#4884#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/vaadin/flow-server/2.0.11/flow-server-2.0.11-sources.jar!/com/vaadin/flow/component/Key.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="196" column="8" selection-start-line="196" selection-start-column="8" selection-end-line="196" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/vaadin/example/ui/SearchPanel.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61">
+          <caret line="30" column="42" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
         </state>
       </provider>
     </entry>

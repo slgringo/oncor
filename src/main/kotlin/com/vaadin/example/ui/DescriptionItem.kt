@@ -11,7 +11,7 @@ import java.io.FileInputStream
 import java.io.IOException
 
 class DescriptionItem(val category : Categories?, val title : String, val description : List<String>?,
-                      val resourceFilename : String, var viewer : VerticalLayout) : VerticalLayout() {
+                      private val resourceFilename : String, var viewer : VerticalLayout) : VerticalLayout() {
     companion object {
         @Suppress("JAVA_CLASS_ON_COMPANION")
         @JvmStatic
@@ -23,22 +23,23 @@ class DescriptionItem(val category : Categories?, val title : String, val descri
     init {
         val titleLabel = H3(title)
         add(titleLabel)
-        if (description != null) {
-            description.forEach {
-                val descriptionLabel = Label(it)
-                add(descriptionLabel)
-            }
+        description?.forEach {
+            val descriptionLabel = Label(it)
+            add(descriptionLabel)
+        }
+        if (category != null) {
+            add(Label(category.name))
         }
         addClickListener { showDocument(resourceFilename) }
     }
 
-    fun showDocument(filename : String) {
+    private fun showDocument(filename : String) {
         viewer.removeAll()
         try {
             FileInputStream(getDocDir() + filename).use {
                 val data = ByteArray(it.available())
                 it.read(data)
-                val streamResource = StreamResource(filename, {outputStream, vaadinSession ->  outputStream.write(data)})
+                val streamResource = StreamResource(filename) { outputStream, _ ->  outputStream.write(data)}
                 viewer.add(EmbeddedPdfDocument(streamResource))
             }
         } catch (e : IOException) {
@@ -47,5 +48,5 @@ class DescriptionItem(val category : Categories?, val title : String, val descri
 
     }
 
-    fun getDocDir() : String = config.get("app.root") + "docs/"
+    private fun getDocDir() : String = config["app.root"] + "docs/"
 }
