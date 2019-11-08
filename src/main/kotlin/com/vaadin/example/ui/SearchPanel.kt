@@ -4,7 +4,6 @@ import com.vaadin.example.search.Categories
 import com.vaadin.example.search.MdProcessor
 import com.vaadin.example.search.Searcher
 import com.vaadin.example.utils.FileUtils
-import com.vaadin.flow.component.Key
 import com.vaadin.flow.component.button.Button
 import com.vaadin.flow.component.html.H1
 import com.vaadin.flow.component.orderedlayout.FlexComponent
