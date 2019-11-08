@@ -135,8 +135,6 @@ b
 2src/main/java/com/vaadin/example/app/MainView.java,5\e\5e5682b3645f20e26e64fbe957f69240c1d4026d
 l
 <src/main/java/com/vaadin/example/ui/EmbeddedPdfDocument.java,6\1\613885d201a223d1037862a0f7a54456479efa64
-d
-4src/main/java/com/vaadin/example/ui/SearchPanel.java,3\0\3017734109fe4e7a484f6ec0d574229d5760d31c
 l
 <src/test/java/com/vaadin/example/search/MdProcessorTest.java,d\a\da8ca72de376d09109e7046211df463ba467f4c2
 h
@@ -147,3 +145,5 @@ Z
 *src/main/webapp/frontend/styles/styles.css,8\1\81223074e506e876501835fe6143bca58f2543ab
 c
 3src/main/java/com/vaadin/example/search/Searcher.kt,3\a\3a26c579da12b888baae83abdb4a61433da8ee34
+d
+4src/main/kotlin/com/vaadin/example/ui/SearchPanel.kt,7\5\75ca7e921f3cdbba5ab0b6551c72a85933a66fc7
