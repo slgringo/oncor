@@ -10,13 +10,15 @@ import com.vaadin.flow.component.orderedlayout.FlexComponent
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout
 import com.vaadin.flow.component.orderedlayout.VerticalLayout
 import com.vaadin.flow.component.textfield.TextField
+import kotlin.collections.HashMap
 
 class SearchPanel : VerticalLayout() {
     private val searcher = Searcher()
     private val resultItems : MutableList<DescriptionItem> = mutableListOf()
     private val textLayout = VerticalLayout()
     val viewer = VerticalLayout()
-    private val filterCheckboxes = FilterCheckboxes()
+    private val filterCheckboxes = FilterCheckboxes(this)
+    private var results = emptyList<String>()
 
     init {
         setSizeFull()
@@ -45,11 +47,12 @@ class SearchPanel : VerticalLayout() {
     }
 
     fun search(searchText : String) {
+        results = searcher.getMatchesFilenames(searchText)
+
         viewer.removeAll()
-        resultItems.forEach { l -> textLayout.remove(l) }
         resultItems.clear()
-        val results = searcher.getMatchesFilenames(searchText)
-        var foundCategories = HashMap<Categories, Int>()
+
+        val foundCategories = HashMap<Categories, Int>()
         results.forEach{
             val fileData = FileUtils.getFileData("md/$it")
             val categoryName = MdProcessor.getCategory(fileData)
@@ -58,15 +61,24 @@ class SearchPanel : VerticalLayout() {
             val item = DescriptionItem(category, MdProcessor.getTitle(fileData), MdProcessor.getContent(fileData),
                     resourceFilename, viewer)
             resultItems.add(item)
-            textLayout.add(item)
             if (category != null) {
                 val itemCount : Int? = foundCategories[category]
                 if (itemCount != null)
-                    foundCategories.put(category, itemCount)
+                    foundCategories[category] = itemCount
                 else
-                    foundCategories.put(category, 1)
+                    foundCategories[category] = 1
             }
         }
         filterCheckboxes.refresh(foundCategories)
+        showItems(emptySet())
+    }
+
+    fun showItems(filter : Set<Categories>) {
+        viewer.removeAll()
+        resultItems.forEach { l -> textLayout.remove(l) }
+        resultItems.forEach {
+            if (filter.isEmpty() || filter.contains(it.category))
+                textLayout.add(it)
+        }
     }
 }

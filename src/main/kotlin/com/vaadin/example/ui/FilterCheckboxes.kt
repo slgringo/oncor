@@ -4,8 +4,8 @@ import com.vaadin.example.search.Categories
 import com.vaadin.flow.component.checkbox.Checkbox
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout
 
-class FilterCheckboxes : HorizontalLayout() {
-    val checkboxes = HashMap<Categories, Checkbox>()
+class FilterCheckboxes(private val searchPanel: SearchPanel) : HorizontalLayout() {
+    private val checkboxes = HashMap<Categories, Checkbox>()
 
     init {
         setWidthFull()
@@ -16,12 +16,13 @@ class FilterCheckboxes : HorizontalLayout() {
         removeAll()
         categories.forEach {
             val checkbox = Checkbox("${it.key.label} (${it.value})")
-            checkboxes.put(it.key, checkbox)
+            checkbox.addValueChangeListener { searchPanel.showItems(getFilter()) }
+            checkboxes[it.key] = checkbox
             add(checkbox)
         }
     }
 
-    fun getFilter() : Set<Categories> {
+    private fun getFilter() : Set<Categories> {
         return checkboxes.entries.filter { it.value.value }.map { it.key }.toSet()
     }
 }
